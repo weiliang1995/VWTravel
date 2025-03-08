@@ -5,13 +5,13 @@ export default function Navbar() {
   return (
     <nav>
       <div
-        className={`${flexBetween} w-full p-6 gap-4 list-none bg-amber-100 text-sm text-[#3f1b04]`}
+        className={`${flexBetween} w-full p-6 gap-4 list-none bg-amber-100 text-secondary-500 font-sans z-35 top-0 fixed`}
       >
         <div className={`w-5/6 mx-auto ${flexBetween}`}>
           <div className={`${flexBetween} gap-8`}>
             <li className={`gap-8 ${flexBetween}`}>
               <Image src="/logo.png" alt="logo" width={120} height={40} />
-              <p>Home</p>
+              <p className="text-primary-500">Home</p>
             </li>
             <li>About Us</li>
             <li>Gallery</li>
