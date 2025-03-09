@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import React from "react";
 import { Carousel, Card } from "@/components/apple-carousel";
 
 export function AppleCardsCarousel() {
