@@ -1,11 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
 import { EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/solid";
+
 export default function Footer() {
   return (
     <footer className="bg-amber-100 pt-12 ">
       <div className="flex w-5/6 mx-auto ">
-        <div className="flex flex-col gap-4 text-secondary-500 basis-2/5 items-center">
+        <div className="flex flex-col gap-4 text-secondary-500 basis-1/2 items-center">
           <Image src="/logo.png" alt="logo" width={240} height={60} />
           <h6 className="text-center text-lg font-bold font-sans">
             William / Vanessa
@@ -63,43 +65,81 @@ export default function Footer() {
             />
           </div>
         </div>
-        <div className="flex flex-col basis-1/5">
-          <div className="flex flex-col basis-1/5 gap-y-2 items-center text-secondary-500 mb-4">
+        <div className="flex flex-col basis-1/4 items-center">
+          <div className="flex flex-col gap-y-2 items-center text-secondary-500 mb-4">
             <h6 className="text-center text-lg font-bold font-sans">
               About Us
             </h6>
-            <p>Who we are?</p>
-            <p>Event & News</p>
-            <p>Latest Promotion</p>
+            <Link
+              href="/about-us"
+              className="transition duration-500 hover:text-primary-400"
+            >
+              Who we are?
+            </Link>
+            <Link
+              href="/event-and-news"
+              className="hover:text-primary-400 transition duration-500"
+            >
+              Event & News
+            </Link>
+            <Link
+              href="/promotions"
+              className="hover:text-primary-400 transition duration-500"
+            >
+              Latest Promotion
+            </Link>
           </div>
-          <div className="flex flex-col basis-1/5 gap-y-2 items-center text-secondary-500">
+          <div className="flex flex-col gap-y-2 items-center text-secondary-500 mb-4">
             <h6 className="text-center text-lg font-bold font-sans">Gallery</h6>
-            <p>Bali</p>
-            <p>Phu Quoc</p>
-            <p>Melbourne</p>
+            <Link
+              href="/gallery"
+              className="transition duration-500 hover:text-primary-400"
+            >
+              View Gallery
+            </Link>
+          </div>
+          <div className="flex flex-col gap-y-2 items-center text-secondary-500 mb-4">
+            <h6 className="text-center text-lg font-bold font-sans">
+              Our Tours
+            </h6>
+            <Link
+              href="/tours"
+              className="transition duration-500 hover:text-primary-400"
+            >
+              By Series
+            </Link>
+            <p>By Area </p>
           </div>
         </div>
-        <div className="flex flex-col basis-1/5 text-secondary-500 gap-y-2 text-center">
-          <h6 className="text-center text-lg font-bold font-sans">
-            Our Service
-          </h6>
-          <p>Airport Transfer Service (KLIA 1 & 2) </p>
-          <p>VIP Tour Package</p>
-          <p>Tour Guide Service</p>
-          <p>Trip Planner</p>
-        </div>
-        <div className="flex flex-col basis-1/5 text-secondary-500 gap-y-2 text-center">
-          <h6 className="text-center text-lg font-bold font-sans">Our Tours</h6>
-          <p>South East Asia</p>
-          <p>China</p>
-          <p>East Asia</p>
-          <p>Australia</p>
-          <p>New Zealand</p>
-          <p>Europe</p>
-          <p>Scandinavia</p>
+        <div className="flex flex-col basis-1/4 text-secondary-500 gap-y-2 text-center">
+          <div className="flex flex-col gap-y-2 items-center text-secondary-500 mb-4">
+            <h6 className="text-center text-lg font-bold font-sans">
+              Our Service
+            </h6>
+            <p>Airport Transfer Service (KLIA 1 & 2) </p>
+            <p>VIP Tour Package</p>
+            <p>Tour Guide Service</p>
+            <p>Trip Planner</p>
+          </div>
+          <div className="flex flex-col gap-y-2 items-center text-secondary-500 mb-4">
+            <h6 className="text-center text-lg font-bold font-sans">
+              Thing to ask?
+            </h6>
+            <Link
+              href="/contact-us"
+              className="transition duration-500 hover:text-primary-400"
+            >
+              Contact Us
+            </Link>
+            <Link
+              href="/faq"
+              className="transition duration-500 hover:text-primary-400"
+            >
+              FAQ
+            </Link>
+          </div>
         </div>
       </div>
-
       <div className="flex items-center justify-between w-2/3 p-4 my-12 gap-4 mx-auto text-center text-secondary-300 font-(family-name:--font-slabo)">
         <p>© 2025 William / Vanessa</p>
         <p>Powered by William & Vanessa</p>
