@@ -9,7 +9,7 @@ export function AppleCardsCarousel() {
 
   return (
     <div className="w-full h-full py-20">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-orange-200 font-sans">
         Wanderlust woven into every trip
       </h2>
       <Carousel items={cards} />
@@ -95,8 +95,14 @@ const data = [
   },
   {
     category: "Fairy Tale Trails",
-    title: "Where Stories Come to Life",
-    src: "https://images.unsplash.com/photo-1507917570388-d661984ea008?q=80&w=986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Where Story Tales Meet Reality",
+    src: "https://images.unsplash.com/photo-1593350054764-2ea4054328ba?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Step into the Surreal",
+    title: "Earth's Strangest Wonders Beckon",
+    src: "https://images.unsplash.com/photo-1642425149556-b6f90e946859?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: <DummyContent />,
   },
 ];
